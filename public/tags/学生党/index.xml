@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>学生党 on Hugo Theme Stack</title><link>https://yangps.xyz/tags/%E5%AD%A6%E7%94%9F%E5%85%9A/</link><description>Recent content in 学生党 on Hugo Theme Stack</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 17 Feb 2026 16:08:44 +0800</lastBuildDate><atom:link href="https://yangps.xyz/tags/%E5%AD%A6%E7%94%9F%E5%85%9A/index.xml" rel="self" type="application/rss+xml"/><item><title>我的域名迁移之路：从一脸懵到搞定全过程</title><link>https://yangps.xyz/p/domain-migration-aliyun-to-cloudflare/</link><pubDate>Tue, 17 Feb 2026 16:08:44 +0800</pubDate><guid>https://yangps.xyz/p/domain-migration-aliyun-to-cloudflare/</guid><description>&lt;h2 id="开头"&gt;开头
+&lt;/h2&gt;&lt;p&gt;那天下午，阳光斜斜地照进宿舍，我正对着电脑发呆。&lt;/p&gt;
+&lt;p&gt;其实这事说来话长。作为一个大二学生，我之前对&amp;quot;域名&amp;quot;这种东西的概念，基本上就是&amp;quot;输入网址能打开网页就行&amp;quot;。什么 DNS、NS、CDN，听起来就像是另一个世界的东西。&lt;/p&gt;
+&lt;p&gt;但生活嘛，总会逼着你学点新东西。&lt;/p&gt;
+&lt;h2 id="为什么会开始折腾这个"&gt;为什么会开始折腾这个
+&lt;/h2&gt;&lt;p&gt;说起来有点好笑。我有个博客，之前一直扔在阿里云上，也不是不能用，就是总觉得哪里不对劲。打开速度慢得像蜗牛，而且每次想改点什么都特别麻烦。&lt;/p&gt;
+&lt;p&gt;后来在网上看到有人说 Cloudflare 免费还快，我就心动了。&lt;/p&gt;
+&lt;p&gt;心动归心动，真正动手的时候才发现——这比我想象的复杂多了。&lt;/p&gt;
+&lt;h2 id="第一步把域名挪过去"&gt;第一步：把域名挪过去
+&lt;/h2&gt;&lt;p&gt;最开始我想得很简单：不就是换个地方管域名吗，应该点几下鼠标就搞定了吧？&lt;/p&gt;
+&lt;p&gt;结果第一个坑就来了。&lt;/p&gt;
+&lt;p&gt;我按照网上的教程，打开 Cloudflare 的网站，输入域名，一切看起来都很顺利。直到它让我改什么 &amp;ldquo;NS 服务器&amp;rdquo;，我才懵了。NS 是什么？为什么要改？改了会怎样？&lt;/p&gt;
+&lt;p&gt;那时候我还不知道，NS 服务器就像是域名的&amp;quot;户口本&amp;quot;，告诉全世界这个域名归谁管。从阿里云换到 Cloudflare，本质上就是把户口迁过去。&lt;/p&gt;
+&lt;p&gt;我犹豫了很久，生怕一改网站就崩了，毕竟里面还写了我不少东西。后来一咬牙，想着反正也备份了，豁出去了。&lt;/p&gt;
+&lt;p&gt;改完之后，等待的那几分钟特别煎熬。我每隔几秒就刷新一下网页，看看还能不能打开。那种心情，就像是等考试成绩出来一样。&lt;/p&gt;
+&lt;p&gt;还好，没崩。&lt;/p&gt;
+&lt;h2 id="第二步让博客住到新地方"&gt;第二步：让博客住到新地方
+&lt;/h2&gt;&lt;p&gt;域名迁过去只是开始，真正的折腾是把博客本身搬到 Cloudflare Pages 上。&lt;/p&gt;
+&lt;p&gt;这里要说一下，我的博客是用 Hugo 搭建的静态博客。Hugo 是什么？简单来说就是一个能把 markdown 文件变成网页的工具。我挺喜欢它的，因为写东西用的是纯文本，不用管那些花里胡哨的排版。&lt;/p&gt;
+&lt;p&gt;但要把 Hugo 博客部署到 Cloudflare，我得先把它传到 GitHub，然后再让 Cloudflare 从 GitHub 拉取代码自动部署。&lt;/p&gt;
+&lt;p&gt;听起来简单，实际操作的时候遇到了各种问题：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Git 推送的时候一直报错，后来发现是代理的问题&lt;/li&gt;
+&lt;li&gt;构建的时候 Hugo 版本不对，生成的页面一片空白&lt;/li&gt;
+&lt;li&gt;好不容易部署上去了，打开一看样式全乱了&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;那天晚上我弄到凌晨两点，室友都睡了，只有我这边还亮着屏幕。屏幕的光打在脸上，感觉整个人都傻了。&lt;/p&gt;
+&lt;p&gt;但当我终于在浏览器里看到自己的博客正常显示的那一刻，真的特别开心。那种成就感，比考了一百分还爽。&lt;/p&gt;
+&lt;h2 id="第三步让域名指向新博客"&gt;第三步：让域名指向新博客
+&lt;/h2&gt;&lt;p&gt;博客部署好了，但还有个问题：域名还是指向原来的地方，得让它指向新的 Cloudflare Pages。&lt;/p&gt;
+&lt;p&gt;这里涉及到 DNS 记录的概念。我大概是这么理解的：&lt;/p&gt;
+&lt;p&gt;域名就像是门牌号，DNS 记录就是告诉别人这个门牌号对应的是哪间房子。现在我换了新房子（Cloudflare Pages），但门牌号没变，所以要更新一下记录，让访客能找到新地方。&lt;/p&gt;
+&lt;p&gt;具体操作就是在 Cloudflare 的 DNS 设置里加一条 CNAME 记录，把域名指向 。&lt;/p&gt;
+&lt;p&gt;这一步倒是没有太多坑，主要就是等生效。DNS 生效需要一点时间，说是几分钟到几小时不等。我大概等了十分钟左右就能访问了。&lt;/p&gt;
+&lt;h2 id="那些踩过的坑"&gt;那些踩过的坑
+&lt;/h2&gt;&lt;h3 id="坑一代理设置"&gt;坑一：代理设置
+&lt;/h3&gt;&lt;p&gt;因为我用的是 v2ray 翻墙，Git 推送的时候一直超时。后来查到要设置 Git 的代理：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;git config --global http.proxy socks5://127.0.0.1:10808
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;git config --global https.proxy socks5://127.0.0.1:10808
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;设置完就好了。这个小问题卡了我快半小时。&lt;/p&gt;
+&lt;h3 id="坑二ssl-证书"&gt;坑二：SSL 证书
+&lt;/h3&gt;&lt;p&gt;换到 Cloudflare 后，我以为是自动 HTTPS，结果一开始访问不了，浏览器提示不安全。后来才发现要在 Cloudflare 的 SSL/TLS 设置里改成&amp;quot;完全&amp;quot;模式。&lt;/p&gt;
+&lt;h3 id="坑三缓存问题"&gt;坑三：缓存问题
+&lt;/h3&gt;&lt;p&gt;有几次我明明更新了内容，刷新网页还是旧的。后来知道是浏览器缓存和 Cloudflare 的 CDN 缓存双重作用。清除缓存或者等一会儿就好了。&lt;/p&gt;
+&lt;h2 id="现在的感觉"&gt;现在的感觉
+&lt;/h2&gt;&lt;p&gt;折腾完这一切，我的博客现在：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;打开速度比以前快多了&lt;/li&gt;
+&lt;li&gt;全球都能访问（原来阿里云在国外访问特别慢）&lt;/li&gt;
+&lt;li&gt;免费 SSL，浏览器地址栏有个小锁&lt;/li&gt;
+&lt;li&gt;每次 git push 自动部署，不用手动上传&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;最重要的是，我学到了一堆以前完全不懂的东西。虽然过程很折腾，但这种感觉挺好的。&lt;/p&gt;
+&lt;p&gt;就像是，你又多会了一样技能，虽然可能以后也不会经常用到，但你知道如果需要，你能搞定。&lt;/p&gt;
+&lt;h2 id="给同样想折腾的同学"&gt;给同样想折腾的同学
+&lt;/h2&gt;&lt;p&gt;如果你也是个学生，想搞个自己的博客或者网站，我的建议是：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;别怕折腾&lt;/strong&gt; - 遇到问题就搜，网上基本都有答案&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;记得备份&lt;/strong&gt; - 改什么之前先备份，错了能回退&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;不要追求完美&lt;/strong&gt; - 先能让它跑起来，再慢慢优化&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;记录过程&lt;/strong&gt; - 就像我现在写的这篇，以后回头看挺有意思的&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;技术这东西，真的是越折腾越熟。刚开始看着那些命令行、配置文件头都大，现在也能慢慢看懂了。&lt;/p&gt;
+&lt;p&gt;可能这就是成长吧。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;写于某个周末的下午，窗外阳光正好。&lt;/em&gt;
+&lt;em&gt;如果你也折腾过类似的东西，欢迎交流。&lt;/em&gt;&lt;/p&gt;</description></item></channel></rss>
