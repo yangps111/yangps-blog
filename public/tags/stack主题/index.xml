@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Stack主题 on Hugo Theme Stack</title>
+        <link>http://localhost:1313/tags/stack%E4%B8%BB%E9%A2%98/</link>
+        <description>Recent content in Stack主题 on Hugo Theme Stack</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Tue, 17 Feb 2026 13:56:54 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/stack%E4%B8%BB%E9%A2%98/index.xml" rel="self" type="application/rss+xml" /><item>
+            <title>你好，世界！我的第一篇博客</title>
+            <link>http://localhost:1313/p/%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</link>
+            <pubDate>Tue, 17 Feb 2026 13:56:54 +0800</pubDate>
+            <guid>http://localhost:1313/p/%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</guid>
+            <description>&lt;h2 id=&#34;-欢迎来到我的博客&#34;&gt;🎉 欢迎来到我的博客&#xA;&lt;/h2&gt;&lt;blockquote&gt;&#xA;&lt;p&gt;这是一个属于年轻人的数字空间&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;折腾了一下午，终于用 &lt;strong&gt;Hugo + Stack 主题&lt;/strong&gt; 搭建好了自己的博客！&lt;/p&gt;&#xA;&lt;h3 id=&#34;为什么开始写博客&#34;&gt;为什么开始写博客？&#xA;&lt;/h3&gt;&lt;ol&gt;&#xA;&lt;li&gt;📚 &lt;strong&gt;记录学习&lt;/strong&gt; - 把学到的知识整理成文字&lt;/li&gt;&#xA;&lt;li&gt;💭 &lt;strong&gt;分享思考&lt;/strong&gt; - 生活中的观察和感悟&lt;/li&gt;&#xA;&lt;li&gt;🎯 &lt;strong&gt;持续成长&lt;/strong&gt; - 用输出倒逼输入&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;技术栈&#34;&gt;技术栈&#xA;&lt;/h3&gt;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;工具&lt;/th&gt;&#xA;          &lt;th&gt;用途&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Hugo&lt;/td&gt;&#xA;          &lt;td&gt;静态网站生成器&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Stack&lt;/td&gt;&#xA;          &lt;td&gt;极简卡片式主题&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Markdown&lt;/td&gt;&#xA;          &lt;td&gt;文章写作&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h3 id=&#34;未来计划&#34;&gt;未来计划&#xA;&lt;/h3&gt;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 分享技术学习笔记&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 记录生活随笔&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 推荐喜欢的书影音&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;em&gt;&amp;ldquo;写作是最好的思考方式。&amp;rdquo;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;感谢阅读！如果你也想搭建博客，欢迎交流～&lt;/p&gt;&#xA;</description>
+        </item></channel>
+</rss>
